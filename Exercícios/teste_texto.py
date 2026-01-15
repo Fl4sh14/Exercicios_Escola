@@ -1,5 +1,6 @@
-from Bibliotecas import texto as texto
+from Bibliotecas import texto
 
-texto.contar_vogais()
-texto.inverter_string()
-texto.palindromo()
+palavra = str(input('Insira uma palavra: '))
+texto.contar_vogais(palavra)
+texto.inverter_string(palavra)
+texto.palindromo(palavra)
