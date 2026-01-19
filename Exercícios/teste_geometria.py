@@ -1,4 +1,4 @@
-import geometria
+from Bibliotecas import geometria
 
 geometria.area_circulo()
 geometria.area_quadrado()

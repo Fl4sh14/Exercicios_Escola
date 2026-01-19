@@ -1,29 +1,30 @@
-from AA_Uteis import separador as sep
+def separador():
+    print('-=' * 20)
 
 def par(numero):
     if numero % 2 == 0:
         print('O número é par!')
     else:
         print('O número é ímpar!')
-    sep()
+    separador()
 
 def positivo(numero):
     if numero >= 0:
         print('O número é positivo!')
     else:
         print('O número é negativo!')
-    sep()
+    separador()
 
 def vazia(texto):
     if texto.strip() == '':
         print('A string está vazia!')
     else:
         print('A string não está vazia!')
-    sep()
+    separador()
 
 def email(email):
     if "@" in email and "." in email:
         print('O email é válido!')
     else:
         print('O email é inválido!')
-    sep()
+    separador()

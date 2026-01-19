@@ -1,4 +1,5 @@
-from AA_Uteis import separador
+def separador():
+    print('-=' * 20)
 
 def converter_celsius():
     celsius = float(input('ºC: '))

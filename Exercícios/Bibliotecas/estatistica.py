@@ -1,4 +1,5 @@
-import AA_Uteis as ut 
+def separador():
+    print('-=' * 20)
 
 # pede númeeros até o usuário escrever nao  
 def coletar_numeros(numeros):
@@ -10,31 +11,31 @@ def coletar_numeros(numeros):
         if resposta == 'n':
             break
     return numeros
-    ut.separador()
+    separador()
 
 def media(numeros):
     soma = sum(numeros)
     quantidade = len(numeros)
     media = soma / quantidade
     print(f'Média: {media}')
-    ut.separador()
+    separador()
 
 
 def maior_valor(numeros):
     maior = max(numeros)
     print(f'Maior valor: {maior}')
-    ut.separador()
+    separador()
 
 def menor_valor(numeros):
     menor = min(numeros)
     print(f'Menor valor: {menor}')
-    ut.separador()
+    separador()
 
 def numeros_maiores_media(numeros):
-    med = media(numeros)
+    med = sum(numeros) / len(numeros)
     contagem = 0
     for numero in numeros:
         if numero > med:
-            contagem = contagem + 1
+            contagem += 1
     print(f'Números maiores que a média: {contagem}')
-    ut.separador()
+    separador()
