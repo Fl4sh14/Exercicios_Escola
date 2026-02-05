@@ -8,3 +8,10 @@ produto = {
 
 produto['stock'] -= 3
 print(produto)
+
+produto['preço'] = 319.99
+print(produto['preço'])
+
+produto['Marca'] = 'Samsung'
+produto['Garantia'] = 24
+print(produto)
