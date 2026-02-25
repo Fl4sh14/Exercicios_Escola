@@ -29,7 +29,7 @@ def listar_estacao(estacao):
     if not estacao:
         print('A estação está vazia. Ainda não existem salas.')
         return
-    print('\nEstado atual da Estação Lunar:')
+    print('Estado atual da Estação Lunar:')
     for sala, equipamentos in estacao.items():
         print(f'- {sala}:')
         if equipamentos:
@@ -37,8 +37,6 @@ def listar_estacao(estacao):
                 print(f'  {idx}. {eq}')
         else:
             print('  (vazia)')
-    print('')
-
 
 estacao = {}
 while True:
@@ -77,7 +75,5 @@ while True:
     elif escolha == '4':
         print('A sair. Até breve, Arquiteto!')
         break
-
-
     else:
         print('Opção inválida. Tente novamente.')
