@@ -28,7 +28,7 @@ adicionar_paciente('Carlos', urgente=True)
 adicionar_paciente('Diana')
 adicionar_paciente('Eduardo', urgente=True)
 
-print('--- Início do Atendimento ---\n')
+print('--- Início do Atendimento ---')
 
 while fila_normal or pilha_urgente:
     atender_paciente()

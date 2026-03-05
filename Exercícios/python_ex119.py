@@ -1,9 +1,13 @@
 from collections import deque
 sites = deque()
 
-sites.append('site1')
-sites.append('site2')
-sites.append('site3')
-sites.append('site4')
+sites.append('site 1')
+sites.append('site 2')
+sites.append('site 3')
+sites.append('site 4')
 
-sites   
+sites.pop()
+sites.pop()
+
+for objeto in sites:
+    print(objeto)
