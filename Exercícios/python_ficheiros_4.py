@@ -1,0 +1,5 @@
+ficheiro = open('nomes.txt', 'w')
+nome1 = input('Digite um nome: ')
+nome2 = input('Digite outro nome: ')
+ficheiro.write(nome1 + '\n' + nome2)
+ficheiro.close()
