@@ -1,28 +1,25 @@
 import easygui
 import csv
-import os
+from pathlib import Path
 from datetime import datetime
 
-import os
+pasta = Path(__file__).parent / 'torneio'
 
-pasta_base = os.path.dirname(os.path.abspath(__file__))
-pasta = os.path.join(pasta_base, 'torneio')
-
-ficheiro_jogadores = os.path.join(pasta, 'jogadores.csv')
-ficheiro_historico = os.path.join(pasta, 'historico.csv')
+ficheiro_jogadores = pasta / 'jogadores.csv'
+ficheiro_historico = pasta / 'historico.csv'
 
 cabecalho_jogadores = ['nome', 'jogo_favorito', 'vitorias', 'derrotas']
 cabecalho_historico = ['vencedor', 'perdedor', 'data']
 
 
 def inicializar():
-    os.makedirs(pasta, exist_ok=True)
+    pasta.mkdir(exist_ok=True)
 
-    if not os.path.exists(ficheiro_jogadores):
+    if not ficheiro_jogadores.exists():
         with open(ficheiro_jogadores, 'w', newline='', encoding='utf-8') as f:
             csv.DictWriter(f, fieldnames=cabecalho_jogadores).writeheader()
 
-    if not os.path.exists(ficheiro_historico):
+    if not ficheiro_historico.exists():
         with open(ficheiro_historico, 'w', newline='', encoding='utf-8') as f:
             csv.DictWriter(f, fieldnames=cabecalho_historico).writeheader()
 
