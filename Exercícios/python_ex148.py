@@ -130,13 +130,13 @@ def ver_classificacao():
     ordenados = sorted(jogadores, key=lambda j: j['vitorias'], reverse=True)
 
     linhas = ['CLASSIFICACAO GERAL\n']
-    linhas.append(f"{'Pos':<5} {'Nome':<20} {'Jogo Favorito':<20} {'V':>4} {'D':>4}")
+    linhas.append(f'{'Pos':<5} {'Nome':<20} {'Jogo Favorito':<20} {'V':>4} {'D':>4}')
     linhas.append('-' * 55)
 
     for i, j in enumerate(ordenados, 1):
         pos = f'{i}.'
         linhas.append(
-            f"{pos:<5} {j['nome']:<20} {j['jogo_favorito']:<20} {j['vitorias']:>4} {j['derrotas']:>4}"
+            f'{pos:<5} {j['nome']:<20} {j['jogo_favorito']:<20} {j['vitorias']:>4} {j['derrotas']:>4}'
         )
 
     easygui.textbox('', title='Classificacao', text='\n'.join(linhas))
@@ -150,12 +150,12 @@ def ver_historico():
         return
 
     linhas = ['HISTORICO DE JOGOS\n']
-    linhas.append(f"{'#':<5} {'Data':<18} {'Vencedor':<20} {'Perdedor':<20}")
+    linhas.append(f'{'#':<5} {'Data':<18} {'Vencedor':<20} {'Perdedor':<20}')
     linhas.append('-' * 63)
 
     for i, jogo in enumerate(historico, 1):
         linhas.append(
-            f"{i:<5} {jogo['data']:<18} {jogo['vencedor']:<20} {jogo['perdedor']:<20}"
+            f'{i:<5} {jogo['data']:<18} {jogo['vencedor']:<20} {jogo['perdedor']:<20}'
         )
 
     easygui.textbox('', title='Historico', text='\n'.join(linhas))
