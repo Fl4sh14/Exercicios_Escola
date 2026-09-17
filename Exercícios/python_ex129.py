@@ -15,3 +15,4 @@ with open('identidade.txt', 'r', encoding='utf-8') as f:
     conteudo = f.read()
     print('\nConteúdo do ficheiro:')
     print(conteudo)
+    
