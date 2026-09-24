@@ -102,5 +102,5 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
 
-p = Pessoa('Ana', 20)
+p = Pessoa('Anabelina', 20)
 print(p.nome, p.idade)
