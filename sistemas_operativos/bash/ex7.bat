@@ -1,3 +1,0 @@
-@echo off
-echo Carrega numa tecla para continuar...
-pause
